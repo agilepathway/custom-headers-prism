@@ -15,7 +15,7 @@ var proxy = httpProxy.createProxyServer({});
 // is made to the target.
 //
 proxy.on('proxyReq', function(proxyReq, req, res, options) {
-  proxyReq.setHeader('X-Special-Proxy-Header', 'foobar');
+  proxyReq.setHeader('Prefer', 'example=dog');
 });
 
 var server = http.createServer(function(req, res) {
