@@ -48,10 +48,11 @@ browser (or [VS Code](https://code.visualstudio.com/)).
    [`node-http-proxy` server](https://github.com/http-party/node-http-proxy), an exact copy of 
    their [stand-alone proxy server with proxy request header
    re-writing example](https://github.com/http-party/node-http-proxy#setup-a-stand-alone-proxy-server-with-proxy-request-header-re-writing).
-   The only modifications were to 
-   [point the proxy server to Prism](96059a2049f352c60c2e988ee6535d198eb8e4d7), and to
-   [rewrite the `Prefer` header](d9f976cb1c4f89b5856e99aa6711a2d954daf6e8) so that Prism serves up
-   the example we specify there.
+   The only modifications were to
+   [point the proxy server to Prism](https://github.com/agilepathway/custom-headers-prism/pull/5/files),
+   and to 
+   [rewrite the `Prefer` header](https://github.com/agilepathway/custom-headers-prism/pull/4/files)
+   so that Prism serves up the example we specify there.
 
 5. Request a pet directly from Prism, and you will see you get [the first example in the OpenAPI
    spec back (Fluffy the cat)](petstore.oas3.yaml#L349-L361)
